@@ -1,0 +1,23 @@
+<h3>Update Slider</h3>
+<div style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">Text</label>
+            <input type="text" class="form-control" id="Text" required [(ngModel)]="adminSlider.sliderText"
+                name="Content">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Image</label>
+            <input type="text" class="form-control" id="Image" required [(ngModel)]="adminSlider.imageUrl"
+                name="Image">
+        </div>
+        <div class="form-group">
+            <label for="name">Youtube Link</label>
+            <input type="text" class="form-control" id="YoutubeLink" required [(ngModel)]="adminSlider.youtubeUrl"
+                name="YoutubeLink">
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>

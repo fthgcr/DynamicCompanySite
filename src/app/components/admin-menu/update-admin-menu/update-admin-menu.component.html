@@ -1,0 +1,23 @@
+<h3>Update Menu</h3>
+<div style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">Text</label>
+            <input type="text" class="form-control" id="Text" required [(ngModel)]="adminMenu.menuName"
+                name="Text">
+        </div>
+        <div class="form-group">
+            <label for="name">Image</label>
+            <input type="text" class="form-control" id="Image" required [(ngModel)]="adminMenu.imageUrl"
+                name="Image">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Icon</label>
+            <input type="text" class="form-control" id="Icon" required [(ngModel)]="adminMenu.iconClass"
+                name="Icon">
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
